@@ -16,8 +16,14 @@ cargo run
 ```
 
 Options available (run with no params to see this list):
-- `something`
-- `somethingelse`
+- `reverse`
+
+  Reverses a provided string. For example:
+
+  ```sh
+  cargo run reverse 'Hello World.'
+  .dlroW olleH
+  ```
 
 ## Rust size performance considerations
 In the `size-comparison` folder I was comparing output binary sizes
