@@ -1,5 +1,5 @@
 [package]
-name = "exercism-sandbox"
+name = "rust-sandbox"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,7 +9,7 @@ edition = "2021"
 unicode-segmentation = "1.7.1"
 
 [[bin]]
-name = "exercism-sandbox"
+name = "rust-sandbox"
 path = "main.rs"
 
 [profile.release]

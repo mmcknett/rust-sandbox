@@ -1,4 +1,4 @@
-# exercism-sandbox
+# rust-sandbox
 I'm currently learning Rust through
 [exercism](https://exercism.org/tracks/rust). This is a project that serves as a
 code sandbox while I do that. The disadvantage of an online environment like

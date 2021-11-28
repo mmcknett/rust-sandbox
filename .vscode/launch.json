@@ -11,11 +11,11 @@
       "cargo": {
         "args": [
           "build",
-          "--bin=exercism-sandbox",
-          "--package=exercism-sandbox"
+          "--bin=rust-sandbox",
+          "--package=rust-sandbox"
         ],
         "filter": {
-          "name": "exercism-sandbox",
+          "name": "rust-sandbox",
           "kind": "bin"
         }
       },
@@ -29,11 +29,11 @@
       "cargo": {
         "args": [
           "build",
-          "--bin=exercism-sandbox",
-          "--package=exercism-sandbox"
+          "--bin=rust-sandbox",
+          "--package=rust-sandbox"
         ],
         "filter": {
-          "name": "exercism-sandbox",
+          "name": "rust-sandbox",
           "kind": "bin"
         }
       },
@@ -48,11 +48,11 @@
         "args": [
           "test",
           "--no-run",
-          "--bin=exercism-sandbox",
-          "--package=exercism-sandbox"
+          "--bin=rust-sandbox",
+          "--package=rust-sandbox"
         ],
         "filter": {
-          "name": "exercism-sandbox",
+          "name": "rust-sandbox",
           "kind": "bin"
         }
       },
