@@ -18,3 +18,16 @@ cargo run
 Options available (run with no params to see this list):
 - `something`
 - `somethingelse`
+
+## Rust size performance considerations
+In the `size-comparison` folder I was comparing output binary sizes
+between C++ and Rust. The primary difference appears to be that the C++
+standard library is dynamically linked by default, whereas Rust statically
+compiles its standard library into the binary. Using `-C prefer-dynamic` leads
+to a pretty comparable binary size.
+
+To see this in action:
+```sh
+cd size-comparison
+./build-and-compare
+```

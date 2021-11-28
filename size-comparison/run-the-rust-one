@@ -1,0 +1,2 @@
+#!/bin/sh
+LD_LIBRARY_PATH=~/.rustup/toolchains/stable-x86_64-apple-darwin/lib ./rust.out

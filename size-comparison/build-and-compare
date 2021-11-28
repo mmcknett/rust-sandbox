@@ -1,0 +1,25 @@
+#!/bin/sh
+
+clang++ hello-world.cpp -o cpp.out
+rustc -C prefer-dynamic hello-world.rs -o rust.out
+objdump -d cpp.out > cpp.s
+objdump -d rust.out > rust.s
+
+ls -lh *.out
+
+echo ""
+echo "Note: The C++ version is built with clang++"
+echo ""
+echo "If you want to see the programs run, the Rust version needs to be told where to find your dynamic libraries."
+echo "This is to make the binary sizes comparable, since C can use the standard library."
+echo ""
+echo "Running the programs:"
+echo "  Rust -- Run ./run-the-rust-one if you want to run the example. It assumes your dylibs are installed where mine are."
+echo "  C++  -- The C++ version can be run with ./cpp.out"
+echo ""
+echo "Inspecting the disassembly:"
+echo "  Rust -- The disassembly will be in rust.s"
+echo "  C++  -- The disassembly will be in cpp.s"
+echo ""
+echo "Cleaning:"
+echo "  ./clean to clean the built files"

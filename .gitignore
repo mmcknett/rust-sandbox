@@ -1,2 +1,4 @@
 /target
 
+/size-comparison/*.out
+/size-comparison/*.s
