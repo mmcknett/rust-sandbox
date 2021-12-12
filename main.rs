@@ -15,6 +15,7 @@ fn main() {
                 println!("{}", reverse(args[2].as_str()));
             }
         },
+        "traits" => traits(),
         _ => println!("Command not recognized.")
     };
 }
@@ -27,6 +28,34 @@ fn print_help() {
 fn reverse(input: &str) -> String {
     return UnicodeSegmentation::graphemes(input, true).rev().collect();
 }
+
+
+trait Show {
+    fn show(&self) -> String;
+}
+
+impl Show for i32 {
+    fn show(&self) -> String {
+        format!("four-byte signed {}", self)
+    }
+}
+
+impl Show for f64 {
+    fn show(&self) -> String {
+        format!("eight-byte float {}", self)
+    }
+}
+
+fn traits() {
+    // Trying out code from https://stevedonovan.github.io/rust-gentle-intro/object-orientation.html
+    let answer = 42;
+    let maybe_pi = 3.14;
+    let v: Vec<&dyn Show> = vec![&answer,&maybe_pi];
+    for d in v.iter() {
+        println!("show {}",d.show());
+    }
+}
+
 
 // Huh! Tests can go right in the Rust file?
 #[cfg(test)]
