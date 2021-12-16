@@ -1,0 +1,11 @@
+#!/bin/sh
+
+clang min-program.c
+
+echo 'Running a.out with no params...'
+./a.out && echo success || echo fail
+
+echo 'Running a.out with param "something"...'
+./a.out something && echo success || echo fail
+
+rm ./a.out

@@ -2,3 +2,6 @@
 
 /size-comparison/*.out
 /size-comparison/*.s
+
+/min-program/*.out
+/min-program/*.s
